@@ -46,6 +46,11 @@ import gdxforInsetIconURL from './gdxfor/gdxfor-small.svg';
 import gdxforConnectionIconURL from './gdxfor/gdxfor-illustration.svg';
 import gdxforConnectionSmallIconURL from './gdxfor/gdxfor-small.svg';
 
+import temiIconURL from './temi/temi.png';
+import temiInsetIconURL from './temi/temi-small.svg';
+import temiConnectionIconURL from './temi/temi-illustration.svg';
+import temiConnectionSmallIconURL from './temi/temi-small.svg';
+
 export default [
     {
         name: (
@@ -317,5 +322,27 @@ export default [
             />
         ),
         helpLink: 'https://scratch.mit.edu/vernier'
+    },
+    {
+        name: 'temi Robot',
+        extensionId: 'temiController',
+        collaborator: 'Robocore',
+        iconURL: temiIconURL,
+        insetIconURL: temiInsetIconURL,
+        description: (
+            <FormattedMessage
+                defaultMessage="Control your temi robot."
+                description="Description for the Robocore temi extension."
+                id="gui.extension.temi.description"
+            />
+        ),
+        featured: true,
+        disabled: false,
+        bluetoothRequired: false,
+        internetConnectionRequired: true,
+        launchPeripheralConnectionFlow: false,
+        useAutoScan: false,
+        helpLink: 'https://robocore.ai'
+        
     }
 ];
